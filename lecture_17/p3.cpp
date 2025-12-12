@@ -14,6 +14,7 @@ int solve(int length,vector<vector<int>>& queries,int k)
     vector<int> countk(res.size(),0);
     vector<int> countkp1(res.size(),0);
     int count=0;
+    // need to consider res[0] also here
     for(int i=1;i<res.size();i++){
         res[i]+=res[i-1];
         if(res[i]==k)

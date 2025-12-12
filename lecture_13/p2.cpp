@@ -26,7 +26,8 @@ int kDivisible(vector<int>& arr,int k)
         }
         else
         {
-            if(map[c.first]!=0 && map[k-c.first]!=0)
+            // if(map[c.first]!=0 && map[k-c.first]!=0)
+            if(map[k-c.first]!=0)
                 ans+=map[c.first]*map[k-c.first];
         }
         map[c.first]=0;

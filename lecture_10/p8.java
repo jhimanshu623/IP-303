@@ -19,7 +19,7 @@ public class p8
                 c1++;
             else
                 c2++;
-            String diff=(c0-c1)+"*"+(c0-c2);
+            String diff=(c0-c1)+"*"+(c1-c2);
             ans+=map.getOrDefault(diff, 0);
             map.put(diff,map.getOrDefault(diff, 0)+1);
         }

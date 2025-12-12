@@ -12,6 +12,7 @@ public class p1
         }
         return b;
     }
+
     public static boolean hasGroupsSizeX(int[] deck) {
         HashMap<Integer,Integer> map=new HashMap<>();
         for(int val:deck)

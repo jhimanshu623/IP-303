@@ -24,6 +24,22 @@ public class p2 {
         }
         return ans;
     }
+    public int leastBricks2(List<List<Integer>> wall) {
+        HashMap<Integer,Integer> map=new HashMap<>();
+        int ans=0;
+        for(int i=0;i<wall.size();i++)
+        {
+            int ps=0;
+            for(int j=0;j<wall.get(i).size()-1;j++)
+            {
+                ps+=wall.get(i).get(j);
+                map.put(ps,map.getOrDefault(ps,0)+1);
+                ans=Math.max(ans,map.get(ps));
+            }
+        }
+        int n=wall.size();
+        return n-ans;
+    }
     public static void main(String[] args) {
         List<List<Integer>> wall=new ArrayList<>();
         wall.add(new ArrayList<>(Arrays.asList(1,2,2,1)));
@@ -32,6 +48,6 @@ public class p2 {
         wall.add(new ArrayList<>(Arrays.asList(2,4)));
         wall.add(new ArrayList<>(Arrays.asList(3,1,2)));
         wall.add(new ArrayList<>(Arrays.asList(1,3,1,1)));
-        System.out.println(leastBricks(wall));
+        System.out.println(leastBricks2(wall));
     }
 }

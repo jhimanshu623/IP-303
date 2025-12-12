@@ -1,4 +1,3 @@
-package lecture_18;
 
 public class p6 {
 
@@ -48,7 +47,7 @@ public class p6 {
     }
 
     public static void main(String[] args) {
-        int t=12;
+        int t=2;
         System.out.println(reachNumber(t));
     }
 }

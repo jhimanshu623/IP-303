@@ -100,8 +100,8 @@ class Solution {
         HashMap<Integer,Integer> map=new HashMap<>();
         for(String s:strs)
         {
-            int num=0;
-            int arr[]=new int[26];
+            // int num=0;
+            // int arr[]=new int[26];
             long id=1;
             for(char ch:s.toCharArray())
             {

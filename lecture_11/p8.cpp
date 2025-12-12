@@ -168,7 +168,7 @@ public:
         {
             int nr=r+dir[d][0];
             int nc=c+dir[d][1];
-             long long int hash = (long long int)nr*(long long int)101 + (long long int)nc*(long long int)97;
+            long long int hash = (long long int)nr*(long long int)101 + (long long int)nc*(long long int)97;
             if(grid[hash]==true)
             {
                 mrow[nr]--;
@@ -200,9 +200,9 @@ public:
         int r=lamps[i][0];
         int c=lamps[i][1];
        // string s=to_string(r)+","+to_string(c);
-        //  r1*101 +  c1*97 =  r2*101 + c2*97
+        //  r1* +  c1*97 =  r2*101 + c2*97
         // (r1-r2)*101 = (c2-c1)*97
-        // r1-r2==97*2  r1 = 98  r2 = 1
+        // r1-r2==91017*2  r1 = 98  r2 = 1
         //  c2-c1 == (101)*2 = c2 = 102 c1 = 1
         
         long long int hash = (long long int)r*(long long int)(1e9+7) + (long long int)c*(long long int)97;
